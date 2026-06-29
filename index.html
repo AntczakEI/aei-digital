@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AEI Digital</title>
+  <meta name="description" content="AEI Digital creates practical digital products, guides and resources for business, productivity and online growth." />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #070b14;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 28px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 15px;
+      opacity: 0.85;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    .hero {
+      min-height: 75vh;
+      padding: 90px 8%;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .tagline {
+      color: #42a5ff;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: 1.05;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #c9d4e5;
+      max-width: 650px;
+      margin-bottom: 36px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .primary {
+      background: #168cff;
+      color: #ffffff;
+    }
+
+    .secondary {
+      border: 1px solid rgba(255,255,255,0.25);
+      color: #ffffff;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      font-size: 34px;
+      margin-bottom: 32px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 14px;
+      padding: 28px;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #c9d4e5;
+    }
+
+    footer {
+      padding: 32px 8%;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: #8f9bb0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 16px;
+      }
+
+      .hero {
+        padding-top: 70px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">AEI Digital</div>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="https://shop.aei-digital.com">Shop</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="tagline">Digital products. Practical systems. Clear results.</div>
+        <h1>Digital resources for people who want useful answers, not noise.</h1>
+        <p>
+          AEI Digital creates practical guides, templates and digital products focused on business,
+          productivity, online work and real-world execution.
+        </p>
+        <div class="buttons">
+          <a class="button primary" href="https://shop.aei-digital.com">Visit the shop</a>
+          <a class="button secondary" href="#products">Explore products</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <h2 class="section-title">What we create</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Practical guides</h3>
+          <p>Clear, direct resources designed to help people understand a topic and take action.</p>
+        </div>
+        <div class="card">
+          <h3>Digital templates</h3>
+          <p>Useful files, systems and resources for productivity, planning and business workflows.</p>
+        </div>
+        <div class="card">
+          <h3>Business resources</h3>
+          <p>Simple, practical materials for freelancers, small businesses and online creators.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About AEI Digital</h2>
+      <div class="card">
+        <p>
+          AEI Digital is a digital brand under Antczak Enterprise International, focused on creating
+          practical online products, guides and resources for modern work and business.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 AEI Digital. A brand of Antczak Enterprise International.
+  </footer>
+</body>
+</html>
