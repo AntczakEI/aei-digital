@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AEI Digital | Digital Products, Automation & Online Systems</title>
-  <meta name="description" content="AEI Digital builds practical digital products, automation systems and online business tools." />
+
+  <title>AEI Digital | Practical Digital Products, Guides & Online Assets</title>
+  <meta
+    name="description"
+    content="AEI Digital creates practical digital products, guides, templates and online assets under Antczak Enterprise International."
+  />
 
   <link rel="icon" href="./assets/images/AEI_Digital_logo.png" />
 
@@ -24,9 +28,15 @@
       --shadow: 0 30px 80px rgba(0,0,0,0.45);
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -52,7 +62,10 @@
       z-index: -1;
     }
 
-    a { color: inherit; text-decoration: none; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
     .glow {
       position: fixed;
@@ -123,7 +136,9 @@
       font-size: 14px;
     }
 
-    .nav-links a:hover { color: var(--text); }
+    .nav-links a:hover {
+      color: var(--text);
+    }
 
     .btn {
       display: inline-flex;
@@ -186,7 +201,7 @@
     }
 
     h1 {
-      font-size: clamp(46px, 7vw, 86px);
+      font-size: clamp(46px, 7vw, 84px);
       line-height: 0.95;
       letter-spacing: -0.075em;
       margin-bottom: 24px;
@@ -257,52 +272,6 @@
       animation: float 6s ease-in-out infinite;
     }
 
-    .dashboard-card {
-      position: absolute;
-      inset: 70px 20px auto auto;
-      width: min(460px, 92%);
-      border-radius: 30px;
-      border: 1px solid var(--border);
-      background: rgba(7,17,31,0.82);
-      backdrop-filter: blur(22px);
-      box-shadow: var(--shadow);
-      padding: 24px;
-      overflow: hidden;
-    }
-
-    .dashboard-card::before {
-      content: "";
-      position: absolute;
-      inset: -2px;
-      background: linear-gradient(135deg, rgba(34,211,238,0.3), transparent, rgba(139,92,246,0.32));
-      z-index: -1;
-    }
-
-    .window-top {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 22px;
-    }
-
-    .dot {
-      width: 11px;
-      height: 11px;
-      border-radius: 50%;
-      background: #ef4444;
-    }
-    .dot:nth-child(2) { background: #f59e0b; }
-    .dot:nth-child(3) { background: #22c55e; }
-
-    .terminal-line {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      color: #dbeafe;
-      font-size: 14px;
-      padding: 11px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.07);
-    }
-
-    .terminal-line span { color: var(--cyan); }
-
     .floating-card {
       position: absolute;
       padding: 18px 20px;
@@ -312,6 +281,7 @@
       backdrop-filter: blur(18px);
       box-shadow: 0 20px 60px rgba(0,0,0,0.28);
       animation: float 5s ease-in-out infinite;
+      z-index: 4;
     }
 
     .floating-card.one {
@@ -331,12 +301,152 @@
       animation-delay: 2s;
     }
 
-    .floating-card strong { display: block; margin-bottom: 5px; }
-    .floating-card span { color: var(--muted); font-size: 13px; }
+    .floating-card strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .floating-card span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .product-window {
+      position: absolute;
+      inset: 70px 20px auto auto;
+      width: min(480px, 92%);
+      border-radius: 30px;
+      border: 1px solid var(--border);
+      background: rgba(7,17,31,0.86);
+      backdrop-filter: blur(24px);
+      box-shadow: var(--shadow);
+      padding: 24px;
+      overflow: hidden;
+      z-index: 3;
+    }
+
+    .product-window::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      background: linear-gradient(135deg, rgba(34,211,238,0.28), transparent 45%, rgba(139,92,246,0.34));
+      z-index: -1;
+    }
+
+    .product-window-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 22px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .product-window-top span {
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+
+    .product-window-top small {
+      color: var(--cyan);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .product-highlight {
+      border-radius: 24px;
+      padding: 24px;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(34,211,238,0.24), transparent 35%),
+        linear-gradient(135deg, rgba(255,255,255,0.11), rgba(255,255,255,0.045));
+      border: 1px solid rgba(255,255,255,0.12);
+      margin-bottom: 18px;
+    }
+
+    .product-label {
+      display: inline-flex;
+      color: var(--lime);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin-bottom: 12px;
+    }
+
+    .product-highlight h3 {
+      font-size: 26px;
+      line-height: 1.05;
+      letter-spacing: -0.05em;
+      margin-bottom: 12px;
+    }
+
+    .product-highlight p {
+      color: #c7d2e3;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .product-list {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .product-row {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      padding: 14px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.055);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .product-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(34,211,238,0.18), rgba(139,92,246,0.2));
+      font-size: 20px;
+      flex: 0 0 auto;
+    }
+
+    .product-row strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .product-row span {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .mini-shop-button {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--cyan), var(--blue), var(--violet));
+      color: white;
+      font-weight: 900;
+      box-shadow: 0 18px 45px rgba(34,211,238,0.2);
+    }
 
     @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-16px); }
+      0%, 100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-16px);
+      }
     }
 
     section {
@@ -366,7 +476,7 @@
       gap: 22px;
     }
 
-    .services {
+    .pillars {
       grid-template-columns: repeat(3, 1fr);
     }
 
@@ -488,6 +598,13 @@
       border-radius: 28px;
       border: 1px solid var(--border);
       background: rgba(255,255,255,0.065);
+      transition: 0.25s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(34,211,238,0.42);
+      box-shadow: 0 28px 70px rgba(0,0,0,0.25);
     }
 
     .product-cover {
@@ -504,6 +621,8 @@
       font-weight: 900;
       letter-spacing: -0.04em;
       padding: 18px;
+      font-size: 24px;
+      line-height: 0.95;
     }
 
     .product-card h3 {
@@ -554,8 +673,13 @@
     }
 
     @keyframes marquee {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
     }
 
     .cta {
@@ -615,15 +739,18 @@
     }
 
     @media (max-width: 980px) {
-      .hero, .split {
+      .hero,
+      .split {
         grid-template-columns: 1fr;
       }
 
       .visual {
-        min-height: 520px;
+        min-height: 560px;
       }
 
-      .services, .products, .process {
+      .pillars,
+      .products,
+      .process {
         grid-template-columns: repeat(2, 1fr);
       }
 
@@ -633,7 +760,10 @@
     }
 
     @media (max-width: 620px) {
-      .stats, .services, .products, .process {
+      .stats,
+      .pillars,
+      .products,
+      .process {
         grid-template-columns: 1fr;
       }
 
@@ -642,11 +772,11 @@
       }
 
       .visual {
-        min-height: 440px;
+        min-height: 620px;
       }
 
-      .dashboard-card {
-        inset: 60px auto auto 0;
+      .product-window {
+        inset: 40px auto auto 0;
         width: 100%;
       }
 
@@ -656,6 +786,19 @@
 
       .brand-text span {
         display: none;
+      }
+
+      .nav {
+        height: 76px;
+      }
+
+      .brand img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .btn {
+        padding: 12px 16px;
       }
     }
   </style>
@@ -670,13 +813,14 @@
         <img src="./assets/images/AEI_Digital_logo.png" alt="AEI Digital logo">
         <div class="brand-text">
           <strong>AEI Digital</strong>
-          <span>Digital systems</span>
+          <span>Digital products</span>
         </div>
       </a>
 
       <nav class="nav-links">
-        <a href="#services">Services</a>
         <a href="#products">Products</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
         <a href="#process">Process</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -689,28 +833,35 @@
     <section class="container hero">
       <div class="reveal">
         <div class="eyebrow">AEI Digital by Antczak Enterprise International</div>
-        <h1>Digital products, automation and online systems that actually work.</h1>
+
+        <h1>
+          Practical digital products, guides and online assets for people who
+          <span class="gradient-text">build, train and grow.</span>
+        </h1>
+
         <p>
-          AEI Digital creates practical digital tools, websites, content systems and automation assets for online brands, creators and small businesses that want clean execution without corporate nonsense.
+          AEI Digital creates practical digital products, guides, templates and online resources under Antczak Enterprise International — built for clarity, execution and real-world use.
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://shop.aei-digital.com">Explore digital products</a>
-          <a class="btn btn-secondary" href="#services">See what we build</a>
+          <a class="btn btn-primary" href="https://shop.aei-digital.com">Browse products</a>
+          <a class="btn btn-secondary" href="#about">Explore AEI Digital</a>
         </div>
 
         <div class="stats">
           <div class="stat">
-            <strong data-count="3">0</strong>
-            <span>Core digital areas</span>
+            <strong data-count="4" data-suffix="+">0</strong>
+            <span>Digital product areas</span>
           </div>
+
           <div class="stat">
-            <strong data-count="100">0</strong>
-            <span>Scalable product ideas</span>
+            <strong data-count="1" data-suffix="">0</strong>
+            <span>Dedicated digital shop</span>
           </div>
+
           <div class="stat">
-            <strong data-count="24">0</strong>
-            <span>Always online</span>
+            <strong data-count="24" data-suffix="/7">0</strong>
+            <span>Online brand presence</span>
           </div>
         </div>
       </div>
@@ -719,133 +870,196 @@
         <div class="orb"></div>
 
         <div class="floating-card one">
-          <strong>Websites</strong>
-          <span>Fast, sharp, responsive</span>
+          <strong>Digital guides</strong>
+          <span>Training, AI, business resources</span>
         </div>
 
         <div class="floating-card two">
-          <strong>Digital Shop</strong>
-          <span>Guides, templates, resources</span>
+          <strong>AEI Digital Shop</strong>
+          <span>Downloadable products</span>
         </div>
 
         <div class="floating-card three">
-          <strong>Automation</strong>
-          <span>Less manual work</span>
+          <strong>Practical assets</strong>
+          <span>Templates, guides, systems</span>
         </div>
 
-        <div class="dashboard-card">
-          <div class="window-top">
-            <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        <div class="product-window">
+          <div class="product-window-top">
+            <span>AEI Digital Product Hub</span>
+            <small>Live brand system</small>
           </div>
 
-          <div class="terminal-line"><span>aei.digital</span> → build website</div>
-          <div class="terminal-line"><span>aei.digital</span> → connect shop</div>
-          <div class="terminal-line"><span>aei.digital</span> → publish products</div>
-          <div class="terminal-line"><span>aei.digital</span> → automate workflow</div>
-          <div class="terminal-line"><span>status</span> → system online</div>
+          <div class="product-highlight">
+            <div>
+              <span class="product-label">Featured collection</span>
+              <h3>Practical digital products for people who build, train and grow.</h3>
+              <p>
+                Guides, templates and online resources created for clear execution and real-world use.
+              </p>
+            </div>
+          </div>
+
+          <div class="product-list">
+            <div class="product-row">
+              <div class="product-icon">🥊</div>
+              <div>
+                <strong>Fighter Performance Guides</strong>
+                <span>Strength, conditioning and mobility resources</span>
+              </div>
+            </div>
+
+            <div class="product-row">
+              <div class="product-icon">🤖</div>
+              <div>
+                <strong>Practical AI Guides</strong>
+                <span>Useful AI workflows without hype</span>
+              </div>
+            </div>
+
+            <div class="product-row">
+              <div class="product-icon">📄</div>
+              <div>
+                <strong>Templates & Online Assets</strong>
+                <span>Simple tools for planning, content and business structure</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://shop.aei-digital.com" class="mini-shop-button">Visit AEI Digital Shop →</a>
         </div>
       </div>
     </section>
 
     <div class="marquee">
       <div class="marquee-track">
-        <span>Websites</span><span>Digital products</span><span>Automation</span><span>Online business systems</span><span>Templates</span><span>Guides</span>
-        <span>Websites</span><span>Digital products</span><span>Automation</span><span>Online business systems</span><span>Templates</span><span>Guides</span>
+        <span>Digital products</span>
+        <span>Training guides</span>
+        <span>Practical AI guides</span>
+        <span>Templates</span>
+        <span>Online assets</span>
+        <span>Digital shop</span>
+        <span>Digital products</span>
+        <span>Training guides</span>
+        <span>Practical AI guides</span>
+        <span>Templates</span>
+        <span>Online assets</span>
+        <span>Digital shop</span>
       </div>
     </div>
 
-    <section id="services" class="container">
+    <section id="products" class="container">
       <div class="section-head reveal">
-        <div class="eyebrow">What we build</div>
-        <h2>One digital brand. Multiple practical systems.</h2>
+        <div class="eyebrow">What AEI Digital creates</div>
+        <h2>One digital brand. Practical product lines.</h2>
         <p>
-          AEI Digital is built around execution: clear structure, clean design, useful products and online systems that can grow without turning into a mess.
+          AEI Digital is built around useful downloadable products: resources that are clear, focused and easy to use without unnecessary noise.
         </p>
       </div>
 
-      <div class="grid services">
+      <div class="grid pillars">
         <article class="card reveal">
-          <div class="icon">⌘</div>
-          <h3>Websites & landing pages</h3>
-          <p>Modern, responsive websites for brands, products and services. Built to look sharp, load fast and explain the offer clearly.</p>
+          <div class="icon">🥊</div>
+          <h3>Training guides</h3>
+          <p>
+            Fighter-focused digital resources covering strength, conditioning, mobility, recovery and practical performance.
+          </p>
           <div class="tags">
-            <span class="tag">GitHub Pages</span><span class="tag">Brand sites</span><span class="tag">Landing pages</span>
+            <span class="tag">Fighter resources</span>
+            <span class="tag">Performance</span>
+            <span class="tag">Guides</span>
           </div>
         </article>
 
         <article class="card reveal">
-          <div class="icon">◆</div>
-          <h3>Digital products</h3>
-          <p>Guides, templates, ebooks and resources designed for real users, not shelfware. Simple products with practical value.</p>
+          <div class="icon">🤖</div>
+          <h3>Practical AI guides</h3>
+          <p>
+            Straight-to-the-point guides for using AI tools in realistic, useful and non-hyped ways for work, content and online business.
+          </p>
           <div class="tags">
-            <span class="tag">Payhip</span><span class="tag">Ebooks</span><span class="tag">Templates</span>
+            <span class="tag">AI workflows</span>
+            <span class="tag">Prompts</span>
+            <span class="tag">Productivity</span>
           </div>
         </article>
 
         <article class="card reveal">
-          <div class="icon">⚡</div>
-          <h3>Automation & workflows</h3>
-          <p>Systems that reduce repetitive work, connect tools and make online operations easier to manage.</p>
+          <div class="icon">📄</div>
+          <h3>Templates & online assets</h3>
+          <p>
+            Simple digital assets for planning, structure, content creation, business setup and cleaner online execution.
+          </p>
           <div class="tags">
-            <span class="tag">Processes</span><span class="tag">Productivity</span><span class="tag">Systems</span>
+            <span class="tag">Templates</span>
+            <span class="tag">Downloads</span>
+            <span class="tag">Systems</span>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="container">
+    <section id="shop" class="container">
       <div class="split">
         <div class="feature-panel reveal">
           <div class="eyebrow">AEI Digital Shop</div>
-          <h3>Digital resources for fighters, creators and online operators.</h3>
+          <h3>Digital resources in one focused place.</h3>
           <p>
-            The AEI Digital Shop is the product side of the brand — a focused place for downloadable guides, training resources, templates and practical digital assets.
+            The AEI Digital Shop is the product side of the brand — a dedicated store for downloadable guides, training resources, templates and practical digital assets.
           </p>
           <a class="btn btn-primary" href="https://shop.aei-digital.com">Open the shop</a>
         </div>
 
         <div class="feature-panel reveal">
-          <h3>Built for growth, not chaos.</h3>
-          <div class="check">Separate brand site and shop structure.</div>
-          <div class="check">Clean domain setup: aei-digital.com and shop.aei-digital.com.</div>
+          <h3>Clean structure from day one.</h3>
+          <div class="check">Main brand website on aei-digital.com.</div>
+          <div class="check">Dedicated shop on shop.aei-digital.com.</div>
+          <div class="check">Separate identity under Antczak Enterprise International.</div>
           <div class="check">Room for future AEI projects without mixing everything together.</div>
-          <div class="check">Professional structure under Antczak Enterprise International.</div>
         </div>
       </div>
     </section>
 
-    <section id="products" class="container">
+    <section id="about" class="container">
       <div class="section-head reveal">
-        <div class="eyebrow">Products</div>
-        <h2>Practical digital products with a clear purpose.</h2>
+        <div class="eyebrow">About the brand</div>
+        <h2>Built for clear execution, not digital clutter.</h2>
         <p>
-          AEI Digital products are designed to be useful immediately: training guides, business resources, templates and systems.
+          AEI Digital is part of Antczak Enterprise International. The brand focuses on practical products and online assets that are useful, structured and easy to understand.
         </p>
       </div>
 
       <div class="grid products">
         <article class="product-card reveal">
           <div class="product-cover">Fighter<br>Performance</div>
-          <h3>Training guides</h3>
-          <p>Structured resources for fighters who want better strength, conditioning and mobility.</p>
-        </article>
-
-        <article class="product-card reveal">
-          <div class="product-cover">Digital<br>Templates</div>
-          <h3>Templates</h3>
-          <p>Simple, usable templates for productivity, planning and digital workflows.</p>
+          <h3>Fighter performance</h3>
+          <p>
+            Downloadable guides for fighters who want practical strength, conditioning and mobility resources.
+          </p>
         </article>
 
         <article class="product-card reveal">
           <div class="product-cover">AI<br>Guides</div>
           <h3>Practical AI guides</h3>
-          <p>Clear guides for using AI tools in useful, realistic and non-hyped ways.</p>
+          <p>
+            Clear guides for using AI tools in realistic work, content and business workflows.
+          </p>
         </article>
 
         <article class="product-card reveal">
-          <div class="product-cover">Business<br>Systems</div>
-          <h3>Online systems</h3>
-          <p>Resources for building cleaner online business structures and workflows.</p>
+          <div class="product-cover">Digital<br>Templates</div>
+          <h3>Templates</h3>
+          <p>
+            Simple, usable templates for planning, productivity, content and online organisation.
+          </p>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-cover">Online<br>Assets</div>
+          <h3>Online assets</h3>
+          <p>
+            Digital resources designed to support cleaner brand, product and business structure.
+          </p>
         </article>
       </div>
     </section>
@@ -853,31 +1067,39 @@
     <section id="process" class="container">
       <div class="section-head reveal">
         <div class="eyebrow">Process</div>
-        <h2>Simple system. Clean execution.</h2>
+        <h2>Simple system. Better products.</h2>
         <p>
-          The goal is not to look busy. The goal is to build assets that are clear, useful and ready to scale.
+          AEI Digital keeps the process focused: choose a practical problem, create a clear resource, publish it properly and keep improving the product line.
         </p>
       </div>
 
       <div class="grid process">
         <article class="card step reveal">
-          <h3>Structure</h3>
-          <p>Define the brand, offer, audience and exact purpose of the digital asset.</p>
+          <h3>Define</h3>
+          <p>
+            Choose the exact audience, problem and purpose of the product or digital asset.
+          </p>
         </article>
 
         <article class="card step reveal">
-          <h3>Design</h3>
-          <p>Create a clean visual system with strong layout, typography and hierarchy.</p>
+          <h3>Create</h3>
+          <p>
+            Build a structured guide, template, resource or online asset with clear practical value.
+          </p>
         </article>
 
         <article class="card step reveal">
-          <h3>Build</h3>
-          <p>Turn the idea into a working website, shop, guide, product or workflow.</p>
+          <h3>Publish</h3>
+          <p>
+            Place the product inside the AEI Digital Shop with clean presentation and direct access.
+          </p>
         </article>
 
         <article class="card step reveal">
-          <h3>Launch</h3>
-          <p>Publish, connect domains, test links and prepare the system for real users.</p>
+          <h3>Improve</h3>
+          <p>
+            Keep the brand scalable by refining product lines, structure, design and future releases.
+          </p>
         </article>
       </div>
     </section>
@@ -885,10 +1107,13 @@
     <section id="contact" class="container">
       <div class="cta reveal">
         <img src="./assets/images/AEI_Digital_logo.png" alt="AEI Digital logo">
-        <h2>Ready to build something sharp?</h2>
+
+        <h2>Explore AEI Digital products.</h2>
+
         <p>
-          AEI Digital is the digital execution arm of Antczak Enterprise International — focused on useful products, clean systems and scalable online assets.
+          AEI Digital creates practical guides, templates and online assets under Antczak Enterprise International — focused on clarity, usefulness and real-world execution.
         </p>
+
         <div class="hero-actions" style="justify-content:center;">
           <a class="btn btn-primary" href="https://shop.aei-digital.com">Visit AEI Digital Shop</a>
           <a class="btn btn-secondary" href="mailto:tomasz@antczak.co.uk">Contact AEI Digital</a>
@@ -906,6 +1131,7 @@
 
   <script>
     const glow = document.getElementById("glow");
+
     document.addEventListener("mousemove", (e) => {
       glow.style.left = e.clientX + "px";
       glow.style.top = e.clientY + "px";
@@ -914,31 +1140,38 @@
     document.getElementById("year").textContent = new Date().getFullYear();
 
     const revealItems = document.querySelectorAll(".reveal");
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add("visible");
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
       });
     }, { threshold: 0.16 });
 
     revealItems.forEach(item => observer.observe(item));
 
     const counters = document.querySelectorAll("[data-count]");
+
     const counterObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
 
         const el = entry.target;
         const target = Number(el.dataset.count);
+        const suffix = el.dataset.suffix || "";
         let current = 0;
         const step = Math.max(1, Math.floor(target / 45));
 
         const timer = setInterval(() => {
           current += step;
+
           if (current >= target) {
             current = target;
             clearInterval(timer);
           }
-          el.textContent = target === 24 ? current + "/7" : current + "+";
+
+          el.textContent = current + suffix;
         }, 24);
 
         counterObserver.unobserve(el);
